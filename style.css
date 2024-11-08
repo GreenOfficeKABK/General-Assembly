@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Abordage-Regular;
+    src: url(/fonts/Abordage-Regular.woff);
+}
+
+html, body{
+    font-family: Abordage-Regular;
+    height: 100%;
+    font-size: 1.25rem;
+    color: white;
+    margin: 0;
+    overflow: hidden;
+}
+
+.text-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    hyphens: auto;
+
+    padding: .5rem;
+}
+
+.program{
+    display: flex;
+    gap: 3.5rem;
+}
+
+.intro{
+    text-indent: 3.6rem;
+}
+
+.text-2{
+    mix-blend-mode:lighten;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    font-size: 4rem;
+
+    padding: .5rem;
+}
+
+
+
+.sc--container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+#paintCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7); /* Initial translucent background */
+    touch-action: none; /* Prevents scrolling on touch devices */
+    pointer-events: none;            
+}
+
+a{
+    color: white;
+    text-decoration: underline;
+
+}
+
+.colon {
+    visibility: visible; /* Initially visible */
+}
+
+
+.random-image {
+    position: absolute;
+    width: 500px; /* Image size */
+    height: 500px;
+    transition: opacity 0.5s ease; /* Fade-out transition */
+}
+
+
+
+@media (max-width: 640px) {
+    html,body{
+        letter-spacing: -.009rem;
+    }
+
+    .program{
+        display: flex;
+        gap: .1rem;
+    }
+
+    .time{
+        flex-basis: 7rem;
+    }
+
+    .text-1{
+        padding: 0.2rem;
+        font-size: .85rem;
+    }
+
+    .text-2{
+        font-size: 1.45rem;
+        transform: translate(-50%, -75%);
+    }
+
+    .random-image {
+        width: 250px;
+        height: 250px;
+    }
+  }
