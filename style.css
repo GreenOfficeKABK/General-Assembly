@@ -16,6 +16,7 @@ html, body{
     color: white;
     margin: 0;
     overflow: hidden;
+    touch-action: none;
 }
 
 .text-1{
@@ -51,8 +52,6 @@ html, body{
     padding: .5rem;
 }
 
-
-
 .sc--container{
     position: absolute;
     top: 0;
@@ -68,14 +67,17 @@ html, body{
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.7); /* Initial translucent background */
-    touch-action: none; /* Prevents scrolling on touch devices */
+    touch-action: none;
     pointer-events: none;            
 }
 
 a{
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
+    padding-right: .2rem;
+
+    border-bottom: .075rem solid white;
+    border-right: .5rem solid white;
 
 }
 
@@ -86,9 +88,9 @@ a{
 
 .random-image {
     position: absolute;
-    width: 500px; /* Image size */
+    width: 500px;
     height: 500px;
-    transition: opacity 0.5s ease; /* Fade-out transition */
+    transition: opacity 0.5s ease;
 }
 
 
