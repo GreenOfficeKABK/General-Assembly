@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Abordage-Regular;
+    src: url(/fonts/Abordage-Regular.woff);
+}
+
+html, body{
+    font-family: Abordage-Regular;
+    height: 100%;
+    color: white;
+    margin: 0;
+}
+
+.wrapper{
+    margin: 1rem;
+}
+
+.wrapper-content{
+    margin-top: .75rem;
+}
+
+.wrapper-content:last-child {
+    margin: .75rem 0 1rem;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+    padding-right: .2rem;
+
+    border-bottom: .075rem solid green;
+    border-right: .5rem solid green;
+
+}
+
+h1{
+    color: green;
+    font-size: 2rem;
+}
+
+p{
+    color: green;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+
+@media (max-width: 640px) {
+    h1{
+        color: green;
+        font-size: 1.1rem;
+    }
+    
+    p{
+        color: green;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+    }
+}
